@@ -19,7 +19,7 @@ A responsive doctor listing application with advanced filtering and search capab
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/doctor-listing-app.git
+   git clone https://github.com/Lakshya-droid/doctor-listing-app.git
    cd doctor-listing-app
    ```
 
