@@ -29,7 +29,7 @@ A responsive doctor listing application with advanced filtering and search capab
    ```
 
 3. Start the development server:
-   ```bash
+   ```
    npm start
    ```
 
@@ -94,6 +94,3 @@ This creates an optimized production build in the `build` folder that can be dep
 - Add doctor rating system
 - Integrate with real backend API
 
-## License
-
-This project is licensed under the MIT License.
