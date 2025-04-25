@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Doctor Listing Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Doctor Listing App Screenshot](./screenshot.png)
+
+A responsive doctor listing application with advanced filtering and search capabilities, built with React.js.
+
+## Features
+
+- **Autocomplete Search**: Search doctors by name with intelligent suggestions
+- **Comprehensive Filters**:
+  - Consultation type (Video/In-Clinic)
+  - Multiple specialty selection
+  - Sorting by fees or experience
+- **URL Persistence**: All filters are maintained in URL query parameters
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Modern UI**: Clean, professional interface with blue/white/grey color scheme
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/doctor-listing-app.git
+   cd doctor-listing-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+src/
+├── components/          # React components
+│   ├── DoctorCard.js    # Individual doctor card component
+│   ├── FilterPanel.js   # Main filter panel component
+│   ├── SearchBar.js     # Search with autocomplete
+│   └── SpecialityFilter.js # Specialty filter component
+├── App.js               # Main application component
+├── App.css              # Global styles
+├── index.js             # Application entry point
+└── utils/
+    └── api.js           # Mock API service
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start`: Runs the app in development mode
+- `npm test`: Launches the test runner
+- `npm run build`: Builds the app for production
+- `npm run eject`: Ejects from Create React App (advanced)
 
-### `npm start`
+## Testing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application includes `data-testid` attributes for all key components to support automated testing:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```javascript
+// Example test IDs
+data-testid="autocomplete-input"
+data-testid="doctor-card"
+data-testid="filter-video-consult"
+data-testid="sort-fees"
+```
 
-### `npm test`
+## Deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To deploy to production:
 
-### `npm run build`
+```bash
+npm run build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This creates an optimized production build in the `build` folder that can be deployed to any static hosting service.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React.js
+- CSS (no external UI libraries)
+- HTML5
+- JavaScript ES6+
 
-### `npm run eject`
+## Future Enhancements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Add pagination for large result sets
+- Implement "Clear All Filters" functionality
+- Add doctor rating system
+- Integrate with real backend API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
