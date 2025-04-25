@@ -1,6 +1,6 @@
 # Doctor Listing Application
 
-![Doctor Listing App Screenshot](./screenshot.png)
+![Doctor Listing App Screenshot](./Screenshot.png)
 
 A responsive doctor listing application with advanced filtering and search capabilities, built with React.js.
 
